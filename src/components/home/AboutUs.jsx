@@ -13,9 +13,9 @@ const content2 = [
 
 const AboutUS = (props) => {
   return (
-    <article ref={props.element} className='home-article__2'>
-      <div className='article-container__2'>
-        <div className='mb-20'>
+    <article ref={props.element} className='home-article_2'>
+      <div className='article-container_2'>
+        <div className='-mt-10 mb-20'>
           <h2 className='heading'>About Us (예시)</h2>
         </div>
         <div>
@@ -27,13 +27,21 @@ const AboutUS = (props) => {
             <p className='typo'>.....</p>
           </div>
           <div className='mb-5'>
-            {content1.map((line) => {
-              return <p className='typo'>{line}</p>;
+            {content1.map((line, idx) => {
+              return (
+                <p key={idx} className='typo'>
+                  {line}
+                </p>
+              );
             })}
           </div>
           <div className='mb-5'>
-            {content2.map((line) => {
-              return <p className='typo'>{line}</p>;
+            {content2.map((line, idx) => {
+              return (
+                <p key={idx} className='typo'>
+                  {line}
+                </p>
+              );
             })}
           </div>
           <p className='typo'>...</p>
