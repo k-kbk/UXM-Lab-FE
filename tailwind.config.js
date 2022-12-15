@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        myIndigo: '#0D4C92',
+        myIndigo: '#333d4b',
+        myBlue: '#0D4C92',
         myGray: '#F0F1F3',
       },
       spacing: {
