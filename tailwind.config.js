@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         myIndigo: '#0D4C92',
+        myGray: '#F0F1F3',
       },
       spacing: {
         18: '4.5rem',
