@@ -7,8 +7,8 @@ const defaultStyle = 'py-2 hover:opacity-50 ';
 const Nav = () => {
   return (
     <nav className='nav'>
-      <ul className='nav__list'>
-        <li className='nav__item'>
+      <ul className='nav-list'>
+        <li className='nav-list__item'>
           <NavLink
             className={({ isActive }) =>
               isActive ? activeStyle : defaultStyle
@@ -17,50 +17,40 @@ const Nav = () => {
             Home
           </NavLink>
         </li>
-        <li className='nav__item'>
+        <li className='nav-list__item'>
           <NavLink
             className={({ isActive }) =>
               isActive ? activeStyle : defaultStyle
             }
-            to='/member'>
-            Member
+            to='/members'>
+            Members
           </NavLink>
         </li>
-        <li className='nav__item'>
+        <li className='nav-list__item'>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? activeStyle : defaultStyle
+            }
+            to='/studies'>
+            Studies
+          </NavLink>
+        </li>
+        <li className='nav-list__item'>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? activeStyle : defaultStyle
+            }
+            to='/publications'>
+            Publications
+          </NavLink>
+        </li>
+        <li className='nav-list__item'>
           <NavLink
             className={({ isActive }) =>
               isActive ? activeStyle : defaultStyle
             }
             to='/news'>
             News
-          </NavLink>
-        </li>
-        <li className='nav__item'>
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? activeStyle : defaultStyle
-            }
-            to='/research'>
-            Research
-          </NavLink>
-        </li>
-        <li className='nav__item'>
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? activeStyle : defaultStyle
-            }
-            to='/publication'>
-            Publication
-          </NavLink>
-        </li>
-
-        <li className='nav__item'>
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? activeStyle : defaultStyle
-            }
-            to='/gallery'>
-            Gallery
           </NavLink>
         </li>
       </ul>
