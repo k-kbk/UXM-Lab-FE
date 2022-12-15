@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const activeStyle = 'text-myIndigo py-1 border-b-2 border-myIndigo';
+const activeStyle = 'text-myBlue py-1 border-b-2 border-myBlue';
 const defaultStyle = 'py-2 hover:opacity-50 ';
 
 const Nav = () => {
