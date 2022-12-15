@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+
+html,
+body,
+#root {
+  font-family: 'Pretendard Variable', ui-sans-serif, system-ui, -apple-system;
+  -webkit-font-smoothing: antialiased;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0 auto;
+
+  color: rgb(30, 30, 35);
+  background-color: rgb(255, 255, 255);
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  @apply w-full h-16 z-10 flex justify-center border-b;
+}
+
+.header-container {
+  @apply w-4/5 flex justify-between items-center;
+}
+
+.nav__list {
+  @apply w-auto flex flex-row justify-center items-center;
+}
+
+.nav__item {
+  @apply font-medium text-base px-4;
+}
+
+.footer {
+  @apply w-full h-32 bg-gray-100;
+}
+
+.footer-container {
+  @apply w-full h-full flex justify-center items-center;
+}
+
+.main {
+  @apply w-full h-full flex justify-center items-center;
+}
+
+.main-container {
+  @apply w-4/5 flex flex-col justify-center items-center;
+}
+
+.main-article {
+  @apply w-full flex justify-evenly items-center;
+}
