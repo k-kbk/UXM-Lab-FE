@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <nav className='nav'>
       <ul className='nav-list'>
-        <li className='nav-list__item'>
+        <li className='nav-list_item'>
           <NavLink
             className={({ isActive }) =>
               isActive ? activeStyle : defaultStyle
@@ -17,7 +17,7 @@ const Nav = () => {
             Home
           </NavLink>
         </li>
-        <li className='nav-list__item'>
+        <li className='nav-list_item'>
           <NavLink
             className={({ isActive }) =>
               isActive ? activeStyle : defaultStyle
@@ -26,7 +26,7 @@ const Nav = () => {
             Members
           </NavLink>
         </li>
-        <li className='nav-list__item'>
+        <li className='nav-list_item'>
           <NavLink
             className={({ isActive }) =>
               isActive ? activeStyle : defaultStyle
@@ -35,7 +35,7 @@ const Nav = () => {
             Studies
           </NavLink>
         </li>
-        <li className='nav-list__item'>
+        <li className='nav-list_item'>
           <NavLink
             className={({ isActive }) =>
               isActive ? activeStyle : defaultStyle
@@ -44,7 +44,7 @@ const Nav = () => {
             Publications
           </NavLink>
         </li>
-        <li className='nav-list__item'>
+        <li className='nav-list_item'>
           <NavLink
             className={({ isActive }) =>
               isActive ? activeStyle : defaultStyle
