@@ -101,17 +101,17 @@ body,
   @apply flex flex-row justify-evenly;
 }
 .card {
-  @apply w-80 h-60 flex flex-col justify-center items-center bg-gray-50 rounded-md drop-shadow;
+  @apply w-80 h-60 flex flex-col justify-center items-center bg-myGray bg-opacity-40 rounded-xl;
 }
 
 /*
 -- Publications --
 */
 .publications-article {
-  @apply w-full flex justify-center items-start py-10 mb-5 bg-gray-50 rounded-md drop-shadow;
+  @apply w-full flex justify-center items-start py-10 mb-5 bg-myGray bg-opacity-40 rounded-xl;
 }
 .year {
-  @apply font-semibold text-3xl pr-8 mr-8 border-r-2 border-gray-500;
+  @apply font-semibold text-3xl pr-8 mr-8 border-r-2 border-gray-300;
 }
 .publications-list_item {
   @apply mb-1;
