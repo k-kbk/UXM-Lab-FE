@@ -1,5 +1,5 @@
 import React from 'react';
-import BlockChain from '../../assets/blockchain.png';
+import Square from '../../assets/square.png';
 import DownButton from './DownButton';
 
 const Index = (props) => {
@@ -12,7 +12,7 @@ const Index = (props) => {
           <p className='font-semibold text-2xl'>명지대학교 UX Media 연구실</p>
         </div>
         <div>
-          <img src={BlockChain} alt='metaverse' className='w-96 h-96' />
+          <img src={Square} alt='metaverse' className='w-96 h-96' />
         </div>
       </div>
       <DownButton onMoveToElement={props.onMoveToElement} />
