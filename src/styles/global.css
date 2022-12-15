@@ -3,6 +3,9 @@
 @tailwind utilities;
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
 
+/*
+-- Common --
+*/
 html,
 body,
 #root {
@@ -21,6 +24,12 @@ body,
 }
 html::-webkit-scrollbar {
   display: none;
+}
+.heading {
+  @apply font-semibold text-4xl;
+}
+.typo {
+  @apply font-medium text-xl;
 }
 
 /*
@@ -73,12 +82,15 @@ html::-webkit-scrollbar {
   @apply w-full flex flex-row justify-evenly items-center mt-8 drop-shadow-sm;
 }
 .down-button {
-  @apply mt-8 animate-bounce-slow;
+  @apply p-3 mt-5 animate-bounce-slow;
 }
 
 /*
 -- Article 2 --
 */
 .home-article__2 {
-  @apply w-full h-screen flex flex-col justify-center items-center mt-16;
+  @apply w-screen h-screen flex flex-col justify-center items-center mt-16 bg-gray-50;
+}
+.article-container__2 {
+  @apply max-w-screen-lg w-full px-3;
 }
