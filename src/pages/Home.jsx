@@ -8,8 +8,8 @@ const Home = () => {
   const { element, onMoveToElement } = useMoveScroll();
 
   return (
-    <main className='main'>
-      <div className='main-container'>
+    <main className='home-main'>
+      <div className='home-container'>
         <Index onMoveToElement={onMoveToElement} />
         <AboutUs element={element} />
         <ContactUs />
