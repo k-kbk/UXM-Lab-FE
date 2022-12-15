@@ -72,10 +72,10 @@ body,
   @apply w-full h-screen flex flex-col justify-evenly items-center pt-16;
 }
 .article-container_1 {
-  @apply w-full flex flex-row justify-evenly items-center mt-8 drop-shadow-sm;
+  @apply w-full flex flex-row justify-evenly items-center mt-10 drop-shadow-sm;
 }
 .down-button {
-  @apply p-3 animate-bounce-slow;
+  @apply p-1 animate-bounce-slow;
 }
 
 /*
@@ -108,7 +108,7 @@ body,
 -- Publications --
 */
 .publications-article {
-  @apply w-full flex justify-center items-start py-10 mb-5 bg-myGray bg-opacity-40 rounded-xl;
+  @apply w-full flex justify-center items-start py-8 mb-5 bg-myGray bg-opacity-40 rounded-xl;
 }
 .year {
   @apply font-semibold text-3xl pr-8 mr-8 border-r-2 border-gray-300;
