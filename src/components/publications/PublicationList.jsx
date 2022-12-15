@@ -1,5 +1,5 @@
 import React from 'react';
-import Publication from '../publications/Publication';
+import PublicationItem from './PublicationItem';
 
 const dummy = [
   {
@@ -26,7 +26,7 @@ const PublicationList = () => {
   return (
     <ul className='publications-list'>
       {dummy.map((item) => (
-        <Publication key={item.id} title={item.title} />
+        <PublicationItem key={item.id} title={item.title} />
       ))}
     </ul>
   );
