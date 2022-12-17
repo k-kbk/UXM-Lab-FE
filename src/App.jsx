@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Layout from './components/layouts/Layout';
+import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import Publications from './pages/Publications';
+import Notices from './pages/Notices';
 
 var vh = 0;
 
@@ -16,10 +17,8 @@ function App() {
     <Layout>
       <Routes>
         <Route path='/' element={<Home />} />
-        {/* <Route path='/members' element={<Members />} /> */}
-        {/* <Route path='/studies' element={<Studies />} /> */}
         <Route path='/publications' element={<Publications />} />
-        {/* <Route path='/news' element={<News />} /> */}
+        <Route path='/notices' element={<Notices />} />
       </Routes>
     </Layout>
   );
