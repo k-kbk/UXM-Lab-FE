@@ -28,13 +28,19 @@ body,
   @apply w-full h-auto flex justify-center items-center;
 }
 .main-container {
-  @apply max-w-screen-lg w-full h-auto flex flex-col justify-center items-center drop-shadow-sm;
+  @apply max-w-screen-lg w-full h-auto flex flex-col justify-center items-center;
 }
 .heading {
   @apply font-semibold text-2xl sm:text-3xl text-myBlue mb-10 sm:mb-20;
 }
 .typo {
   @apply font-medium text-base sm:text-xl;
+}
+.search-container {
+  @apply w-full flex justify-start items-center px-8;
+}
+.search-input {
+  @apply w-52 text-black py-2 px-4 bg-myGray rounded-xl focus:outline-none;
 }
 
 /*
@@ -80,14 +86,14 @@ body,
   @apply w-full flex flex-col sm:flex-row justify-evenly items-center sm:mt-10 drop-shadow-sm;
 }
 .down-button {
-  @apply p-1 animate-bounce-slow;
+  @apply p-1 animate-bounce-slow mt-5;
 }
 
 /*
 -- [Home] About Us --
 */
 .home-article_2 {
-  @apply w-full h-screen flex flex-col justify-evenly items-center pt-16;
+  @apply w-full h-mobileScreen sm:h-screen flex flex-col justify-evenly items-center pt-16;
 }
 .article-container_2 {
   @apply w-full px-8 sm:px-3;
@@ -106,18 +112,34 @@ body,
   @apply flex flex-col sm:flex-row sm:justify-evenly items-center;
 }
 .card {
-  @apply w-64 sm:w-72 h-40 sm:h-56 flex flex-col justify-center items-center mb-5 sm:mb-0 bg-myGray bg-opacity-40 rounded-xl;
+  @apply w-64 sm:w-72 h-40 sm:h-56 flex flex-col justify-center items-center mb-5 sm:mb-0 bg-myGray bg-opacity-70 rounded-xl;
 }
 
 /*
 -- Publications --
 */
 .publications-article {
-  @apply w-auto flex flex-col sm:flex-row justify-center items-start mx-8 sm:mx-0 px-6 sm:px-10 py-6 sm:py-8 mb-5 bg-myGray bg-opacity-40 rounded-xl;
+  @apply w-auto flex flex-col sm:flex-row justify-center items-start mx-8 sm:mx-0 px-6 sm:px-10 py-6 sm:py-8 mb-5 bg-myGray bg-opacity-70 rounded-xl;
 }
 .year {
-  @apply font-semibold text-xl sm:text-3xl pb-1 sm:pb-0 mb-2 sm:mb-0 sm:pr-7 sm:mr-7 border-b-2 sm:border-b-0 sm:border-r-2 border-gray-300;
+  @apply font-semibold text-xl sm:text-3xl pb-1 sm:pb-0 mb-2 sm:mb-0 sm:pr-7 sm:mr-7 border-b-2 sm:border-b-0 sm:border-r-2 border-zinc-300;
 }
-.publications-list_item {
+.publication-list_item {
   @apply my-0.5;
+}
+
+/*
+-- Notices --
+*/
+.notice-list {
+  @apply w-full flex flex-col sm:mb-10;
+}
+.notice-list_item {
+  @apply w-auto flex flex-col sm:flex-row justify-between mx-8 mb-5 pt-2 pb-2 border-b border-zinc-300;
+}
+.notice_title {
+  @apply font-medium text-base md:text-lg;
+}
+.notice_date {
+  @apply font-normal text-sm md:text-base text-zinc-500;
 }
