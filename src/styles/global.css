@@ -49,8 +49,11 @@ body,
 /*
 -- Nav --
 */
+.nav {
+  @apply hidden sm:block;
+}
 .nav-list {
-  @apply w-auto hidden sm:flex flex-row justify-center items-center;
+  @apply w-auto sm:flex flex-row justify-center items-center;
 }
 .nav-list_item {
   @apply font-medium text-base px-4;
