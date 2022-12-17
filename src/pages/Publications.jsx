@@ -5,7 +5,7 @@ const Publications = () => {
   return (
     <main className='main'>
       <div className='main-container'>
-        <div className='mt-24 sm:mt-30 sm:mb-12'>
+        <div className='mt-24 sm:mt-30'>
           <h1 className='heading'>Publications</h1>
         </div>
         <article className='publications-article'>

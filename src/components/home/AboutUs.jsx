@@ -11,7 +11,7 @@ const AboutUS = (props) => {
   return (
     <article ref={props.element} className='home-article_2'>
       <div className='article-container_2'>
-        <div className='-mt-10 sm:mb-20'>
+        <div className='-mt-10'>
           <h2 className='heading'>About Us (예시)</h2>
         </div>
         <div>
