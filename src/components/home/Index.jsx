@@ -6,7 +6,7 @@ const Index = (props) => {
   return (
     <article className='home-article_1'>
       <div className='article-container_1'>
-        <div className='my-12 sm:my-0 sm:mx-10 text-center'>
+        <div className='my-12 sm:my-0 sm:mx-10 text-center text-zinc-800'>
           <p className='font-semibold text-3xl sm:text-5xl'>
             MyongJi University
           </p>
