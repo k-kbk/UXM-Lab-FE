@@ -6,7 +6,7 @@ const Header = () => {
     <header className='header'>
       <div className='header-container'>
         <div>
-          <p className='font-bold text-3xl '>uxm lab.</p>
+          <p className='font-bold text-2xl sm:text-3xl '>uxm lab.</p>
         </div>
         <Nav />
       </div>
