@@ -132,14 +132,41 @@ body,
 -- Notices --
 */
 .notice-list {
-  @apply w-full flex flex-col sm:mb-10;
+  @apply w-full flex flex-col px-8 sm:mb-10;
 }
 .notice-list_item {
-  @apply w-auto flex flex-col sm:flex-row justify-between mx-8 mb-5 pt-2 pb-2 border-b border-zinc-300;
+  @apply w-auto mb-5 pt-2 pb-2 border-b hover:text-zinc-400 active:text-zinc-400;
 }
-.notice_title {
+.notice-item_link {
+  @apply w-auto flex flex-col sm:flex-row justify-between;
+}
+.notice-item_title {
   @apply font-medium text-base md:text-lg;
 }
-.notice_date {
+.notice-item_date {
   @apply font-normal text-sm md:text-base text-zinc-500;
+}
+.notice-detail {
+  @apply w-full flex flex-col px-8 mt-28 sm:mt-40;
+}
+.notice-detail_header {
+  @apply w-full flex flex-col pb-6 sm:pb-8;
+}
+.notice-detail_title {
+  @apply font-semibold text-2xl sm:text-3xl text-zinc-800 mb-3;
+}
+.notice-detail_date {
+  @apply text-base sm:text-lg;
+}
+.notice-detail_content {
+  @apply w-full border-y py-6 sm:py-8 whitespace-pre-line;
+}
+.notice-detail_line {
+  @apply font-medium text-base sm:text-lg;
+}
+.notice-button {
+  @apply w-full flex justify-end;
+}
+.notice-link {
+  @apply font-semibold text-sm sm:text-base text-myBlue px-4 py-2 mt-8 sm:mt-10 mb-2 sm:mb-10 bg-myGray bg-opacity-70 rounded-xl;
 }

@@ -50,6 +50,7 @@ const NoticeList = () => {
       {dummy.map((item) => (
         <NoticeItem
           key={item.id}
+          id={item.id}
           title={item.title}
           createdAt={item.createdAt}
         />

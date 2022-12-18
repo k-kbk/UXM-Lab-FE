@@ -4,6 +4,7 @@ import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import Publications from './pages/Publications';
 import Notices from './pages/Notices';
+import NoticeDetail from './pages/NoticeDetail';
 
 var vh = 0;
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/publications' element={<Publications />} />
         <Route path='/notices' element={<Notices />} />
+        <Route path='/notices/:id' element={<NoticeDetail />} />
       </Routes>
     </Layout>
   );
