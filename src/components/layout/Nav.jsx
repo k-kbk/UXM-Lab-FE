@@ -1,14 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const activeStyle = 'text-myBlue py-1 border-b-2 border-myBlue';
-const defaultStyle = 'py-2 hover:opacity-50 ';
+const activeStyle =
+  'block text-myBlue px-4 md:px-0 py-3.5 md:py-1 md:border-b-2 border-myBlue rounded-sm md:rounded-none active:bg-myGray bg-opacity-30';
+const defaultStyle =
+  'block px-4 md:px-0 py-3.5 md:py-1 md:hover:opacity-50 rounded-sm md:rounded-none active:bg-myGray bg-opacity-30';
 
-const Nav = () => {
+const Nav = ({ openMenu, handleMenu }) => {
   return (
-    <nav className='nav'>
+    <nav className={openMenu ? 'nav flex' : 'nav hidden'}>
       <ul className='nav-list'>
-        <li className='nav-list_item'>
+        <li
+          className='nav-list_item'
+          onClick={openMenu ? handleMenu : undefined}>
           <NavLink
             className={({ isActive }) =>
               isActive ? activeStyle : defaultStyle
@@ -17,7 +21,9 @@ const Nav = () => {
             Members
           </NavLink>
         </li>
-        <li className='nav-list_item'>
+        <li
+          className='nav-list_item'
+          onClick={openMenu ? handleMenu : undefined}>
           <NavLink
             className={({ isActive }) =>
               isActive ? activeStyle : defaultStyle
@@ -26,7 +32,9 @@ const Nav = () => {
             Studies
           </NavLink>
         </li>
-        <li className='nav-list_item'>
+        <li
+          className='nav-list_item'
+          onClick={openMenu ? handleMenu : undefined}>
           <NavLink
             className={({ isActive }) =>
               isActive ? activeStyle : defaultStyle
@@ -35,7 +43,9 @@ const Nav = () => {
             Publications
           </NavLink>
         </li>
-        <li className='nav-list_item'>
+        <li
+          className='nav-list_item'
+          onClick={openMenu ? handleMenu : undefined}>
           <NavLink
             className={({ isActive }) =>
               isActive ? activeStyle : defaultStyle
@@ -44,7 +54,9 @@ const Nav = () => {
             Notices
           </NavLink>
         </li>
-        <li className='nav-list_item'>
+        <li
+          className='nav-list_item'
+          onClick={openMenu ? handleMenu : undefined}>
           <NavLink
             className={({ isActive }) =>
               isActive ? activeStyle : defaultStyle
