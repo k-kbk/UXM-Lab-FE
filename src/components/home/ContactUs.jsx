@@ -9,28 +9,28 @@ const ContactUs = () => {
         </div>
         <div className='card-container'>
           <div className='card'>
-            <p className='font-[tossface] text-2xl sm:text-3xl sm:mb-3'>📞</p>
-            <h3 className='font-semibold text-lg sm:text-xl mb-5'>Call</h3>
-            <p className='font-medium text-base sm:text-lg'>02-300-0000</p>
-            <p className='font-medium text-base sm:text-lg'>02-303-3333</p>
+            <p className='font-[tossface] text-2xl md:text-3xl md:mb-3'>📞</p>
+            <h3 className='font-semibold text-lg md:text-xl mb-5'>Call</h3>
+            <p className='font-medium text-base md:text-lg'>02-300-0000</p>
+            <p className='font-medium text-base md:text-lg'>02-303-3333</p>
           </div>
           <div className='card'>
-            <p className='font-[tossface] text-2xl sm:text-3xl sm:mb-3'>📧</p>
-            <h3 className='font-semibold text-lg sm:text-xl mb-5'>E-Mail</h3>
-            <p className='font-medium text-base sm:text-lg'>
+            <p className='font-[tossface] text-2xl md:text-3xl md:mb-3'>📧</p>
+            <h3 className='font-semibold text-lg md:text-xl mb-5'>E-Mail</h3>
+            <p className='font-medium text-base md:text-lg'>
               Prof: example@gmail.com
             </p>
-            <p className='font-medium text-base sm:text-lg'>
+            <p className='font-medium text-base md:text-lg'>
               Lab: example@gmail.com
             </p>
           </div>
           <div className='card'>
-            <p className='font-[tossface] text-2xl sm:text-3xl sm:mb-3'>🏠</p>
-            <h3 className='font-semibold text-lg sm:text-xl mb-5'>Address</h3>
-            <p className='font-medium text-base sm:text-lg'>
+            <p className='font-[tossface] text-2xl md:text-3xl md:mb-3'>🏠</p>
+            <h3 className='font-semibold text-lg md:text-xl mb-5'>Address</h3>
+            <p className='font-medium text-base md:text-lg'>
               명지대학교 인문캠퍼스
             </p>
-            <p className='font-medium text-base sm:text-lg'>
+            <p className='font-medium text-base md:text-lg'>
               학생회관 10층, 10103호
             </p>
           </div>

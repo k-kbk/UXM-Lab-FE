@@ -15,14 +15,14 @@ const AboutUS = (props) => {
           <h2 className='heading'>About Us (예시)</h2>
         </div>
         <div>
-          <div className='mb-3 sm:mb-5'>
+          <div className='mb-3 md:mb-5'>
             <p className='typo'>
               UX Media Lab은 유무선 이동통신 환경에서 네트워크 구조, 프로토콜 및
               보안의 선도적인 연구를 수행해 왔습니다.
             </p>
             <p className='typo'>.....</p>
           </div>
-          <div className='mb-3 sm:mb-5'>
+          <div className='mb-3 md:mb-5'>
             {content1.map((line, idx) => {
               return (
                 <p key={idx} className='typo'>
@@ -31,7 +31,7 @@ const AboutUS = (props) => {
               );
             })}
           </div>
-          <div className='mb-3 sm:mb-5'>
+          <div className='mb-3 md:mb-5'>
             {content2.map((line, idx) => {
               return (
                 <p key={idx} className='typo'>

@@ -6,7 +6,7 @@ const Publications = () => {
   return (
     <>
       <Heading>Publications</Heading>
-      <div className='sm:mb-10'>
+      <div className='md:mb-10'>
         <article className='publications-article'>
           <h2 className='year'>2022</h2>
           <PublicationList />
