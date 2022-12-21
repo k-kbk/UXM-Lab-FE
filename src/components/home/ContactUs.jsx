@@ -9,13 +9,13 @@ const ContactUs = () => {
         </div>
         <div className='card-container'>
           <div className='card'>
-            <p className='font-[tossface] text-2xl md:text-3xl md:mb-3'>📞</p>
+            <p className='font-[Tossface] text-2xl md:text-3xl md:mb-3'>📞</p>
             <h3 className='font-semibold text-lg md:text-xl mb-5'>Call</h3>
             <p className='font-medium text-base md:text-lg'>02-300-0000</p>
             <p className='font-medium text-base md:text-lg'>02-303-3333</p>
           </div>
           <div className='card'>
-            <p className='font-[tossface] text-2xl md:text-3xl md:mb-3'>📧</p>
+            <p className='font-[Tossface] text-2xl md:text-3xl md:mb-3'>📧</p>
             <h3 className='font-semibold text-lg md:text-xl mb-5'>E-Mail</h3>
             <p className='font-medium text-base md:text-lg'>
               Prof: example@gmail.com
@@ -25,7 +25,7 @@ const ContactUs = () => {
             </p>
           </div>
           <div className='card'>
-            <p className='font-[tossface] text-2xl md:text-3xl md:mb-3'>🏠</p>
+            <p className='font-[Tossface] text-2xl md:text-3xl md:mb-3'>🏠</p>
             <h3 className='font-semibold text-lg md:text-xl mb-5'>Address</h3>
             <p className='font-medium text-base md:text-lg'>
               명지대학교 인문캠퍼스
