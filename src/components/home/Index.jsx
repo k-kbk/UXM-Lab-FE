@@ -1,11 +1,14 @@
 import React from 'react';
+import useScrollFadeIn from '../../hooks/useScrollFadeIn';
 import Code from '../../assets/code.png';
 import DownButton from './DownButton';
 
 const Index = (props) => {
+  const animation = useScrollFadeIn();
+
   return (
     <article className='home-article_1'>
-      <div className='article-container_1'>
+      <div className='article-container_1' {...animation}>
         <div className='mt-16 mb-6 md:mt-0 md:mb-0 mx-8 md:mx-10 text-center text-zinc-800'>
           <p className='font-semibold text-3xl md:text-5xl'>
             MyongJi University

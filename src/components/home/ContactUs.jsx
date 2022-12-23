@@ -1,9 +1,12 @@
 import React from 'react';
+import useScrollFadeIn from '../../hooks/useScrollFadeIn';
 
 const ContactUs = () => {
+  const animation = useScrollFadeIn();
+
   return (
     <article className='home-article_3'>
-      <div className='article-container_3'>
+      <div className='article-container_3' {...animation}>
         <div className='text-center'>
           <h2 className='heading'>Contact Us</h2>
         </div>
