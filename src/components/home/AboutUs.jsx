@@ -12,7 +12,7 @@ const AboutUS = (props) => {
     <article ref={props.element} className='home-article_2'>
       <div className='article-container_2'>
         <div className='-mt-10'>
-          <h2 className='heading'>About Us (예시)</h2>
+          <h2 className='heading'>About Us</h2>
         </div>
         <div>
           <div className='mb-3 md:mb-5'>

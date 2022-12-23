@@ -10,7 +10,10 @@
 html,
 body,
 #root {
-  font-family: 'Pretendard Variable', ui-sans-serif, system-ui, -apple-system;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
   -webkit-font-smoothing: antialiased;
   word-break: keep-all;
 
@@ -47,7 +50,7 @@ body,
 -- Header --
 */
 .header {
-  @apply w-full md:h-16 fixed z-10 flex justify-center md:px-8 bg-white border-none md:border-b;
+  @apply w-full md:h-16 fixed z-10 flex justify-center md:px-8 bg-white border-b-0 md:border-b;
 }
 .header-container {
   @apply max-w-screen-lg w-full flex flex-col md:flex-row items-center;
@@ -93,7 +96,7 @@ body,
 }
 
 /*
--- [Home] About Us --
+-- [Home] AboutUs --
 */
 .home-article_2 {
   @apply w-full h-mobileScreen flex flex-col justify-evenly items-center pt-16;
@@ -103,7 +106,7 @@ body,
 }
 
 /*
--- [Home] Contact Us --
+-- [Home] ContactUs --
 */
 .home-article_3 {
   @apply w-full h-full flex flex-col justify-center items-center mt-10 md:mb-30;
@@ -115,28 +118,56 @@ body,
   @apply flex flex-col md:flex-row md:justify-evenly items-center;
 }
 .card {
-  @apply w-64 md:w-72 h-40 md:h-56 flex flex-col justify-center items-center mb-5 md:mb-0 bg-myGray bg-opacity-70 rounded-xl;
+  @apply w-64 md:w-72 h-40 md:h-56 flex flex-col justify-center items-center mb-5 md:mb-0 bg-myGray bg-opacity-50 rounded-xl;
+}
+
+/*
+-- [Members] MemberList --
+*/
+.members-container {
+  @apply w-full flex flex-row flex-wrap justify-center items-center;
+}
+.members_professor {
+  @apply w-full flex flex-col justify-center items-center;
+}
+/*
+-- [Members] MemberItem --
+*/
+.members_profile {
+  @apply w-64 flex flex-col justify-between items-center py-8 mb-5 mx-5 bg-myGray bg-opacity-50 rounded-xl;
+}
+.member_name {
+  @apply font-semibold text-lg md:text-xl text-center;
+}
+.member_info {
+  @apply font-medium text-sm md:text-base;
 }
 
 /*
 -- Publications --
 */
 .publications-article {
-  @apply w-auto flex flex-col md:flex-row justify-center items-start mx-8 md:mx-0 px-6 md:px-10 py-6 md:py-8 mb-5 bg-myGray bg-opacity-70 rounded-xl;
+  @apply w-auto flex flex-col md:flex-row justify-center items-start mx-8 px-8 md:px-10 py-7 md:py-8 mb-5 bg-myGray bg-opacity-50 rounded-xl;
 }
 .year {
-  @apply font-semibold text-xl md:text-3xl pb-1 md:pb-0 mb-2 md:mb-0 md:pr-7 md:mr-7 border-b-2 md:border-b-0 md:border-r-2 border-zinc-300;
+  @apply font-semibold text-xl md:text-3xl pb-1 md:pb-0 mb-2 md:mb-0 md:pr-8 md:mr-8 border-b-2 md:border-b-0 md:border-r-2 border-zinc-300;
 }
 .publication-list_item {
   @apply my-0.5;
 }
-
+.publication_title {
+  @apply font-medium text-base md:text-lg;
+}
 /*
--- Notices --
+-- [Notices] NoticeList --
 */
 .notice-list {
   @apply w-full flex flex-col px-8 md:mb-10;
 }
+
+/*
+-- [Notices] NoticeItem --
+*/
 .notice-list_item {
   @apply w-auto mb-5 pt-2 pb-2 border-b hover:text-zinc-400 active:text-zinc-400;
 }
@@ -149,9 +180,23 @@ body,
 .notice-item_date {
   @apply font-normal text-sm md:text-base text-zinc-500;
 }
+
+/*
+-- [NoticeDetail] NoticeDetail --
+*/
 .notice-detail {
   @apply w-full flex flex-col px-8 mt-28 md:mt-40;
 }
+.notice-button {
+  @apply w-full flex justify-end;
+}
+.notice-link {
+  @apply font-semibold text-sm md:text-base text-myBlue px-4 py-2 mt-8 md:mt-10 mb-2 md:mb-10 bg-myGray bg-opacity-50 rounded-xl;
+}
+
+/*
+-- [NoticeDetail] NoticeHeader --
+*/
 .notice-detail_header {
   @apply w-full flex flex-col pb-6 md:pb-8;
 }
@@ -161,15 +206,13 @@ body,
 .notice-detail_date {
   @apply text-base md:text-lg;
 }
+
+/*
+-- [NoticeDetail] NoticeContent --
+*/
 .notice-detail_content {
   @apply w-full border-y py-6 md:py-8 whitespace-pre-line;
 }
 .notice-detail_line {
   @apply font-medium text-base md:text-lg;
-}
-.notice-button {
-  @apply w-full flex justify-end;
-}
-.notice-link {
-  @apply font-semibold text-sm md:text-base text-myBlue px-4 py-2 mt-8 md:mt-10 mb-2 md:mb-10 bg-myGray bg-opacity-70 rounded-xl;
 }
