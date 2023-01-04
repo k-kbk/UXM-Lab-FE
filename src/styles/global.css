@@ -125,22 +125,41 @@ body,
 -- [Members] MemberList --
 */
 .members-container {
-  @apply w-full flex flex-row flex-wrap justify-center items-center;
-}
-.members_professor {
   @apply w-full flex flex-col justify-center items-center;
 }
+.members_professor {
+  @apply w-fit flex flex-row justify-center items-center px-20 mb-10 border bg-myGray bg-opacity-50 rounded-xl;
+}
+.professor_info {
+  @apply flex flex-col justify-center ml-10;
+}
+
 /*
 -- [Members] MemberItem --
 */
 .members_profile {
-  @apply w-64 flex flex-col justify-between items-center py-8 mb-5 mx-5 bg-myGray bg-opacity-50 rounded-xl;
+  @apply w-56 md:w-60 flex flex-col justify-between items-center mb-10 md:mb-5 mx-5 bg-myGray bg-opacity-50 rounded-xl border;
 }
-.member_name {
-  @apply font-semibold text-lg md:text-xl text-center;
+.member_img-wrap {
+  @apply px-5;
+}
+.member_img {
+  @apply w-full h-full mt-1 -mb-3;
 }
 .member_info {
-  @apply font-medium text-sm md:text-base;
+  @apply w-full text-white bg-myIndigo rounded-b-xl py-4 px-6;
+}
+.member_koreanName {
+  @apply font-bold text-lg md:text-xl;
+}
+.member_englishName {
+  @apply font-medium text-gray-300 text-sm md:text-base ml-2;
+}
+.member_subtitle {
+  @apply font-medium text-gray-300 text-xs md:text-sm mt-2;
+}
+.member_content {
+  @apply font-semibold text-sm md:text-base;
 }
 
 /*
@@ -158,6 +177,7 @@ body,
 .publication_title {
   @apply font-medium text-base md:text-lg;
 }
+
 /*
 -- [Notices] NoticeList --
 */
